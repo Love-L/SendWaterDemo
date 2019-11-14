@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.qfdqc.views.demo.RegisterUsernameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:hint="@string/input_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:hint="@string/username_hint"
+        android:background="@drawable/et_bg"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/enter_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="@string/enter" />
+
+</LinearLayout>

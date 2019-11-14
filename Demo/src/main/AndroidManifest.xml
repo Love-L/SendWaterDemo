@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qfdqc.views.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".SeatInfoActivity"
+            android:label="查询结果">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:label="登录">
+        </activity>
+        <activity
+            android:name=".ContentActivity"
+            android:label="主页"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".RegisterUsernameActivity"
+            android:label="注册"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".RegisterPasswordActivity"
+            android:label="注册"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ModifyPasswordActivity"
+            android:label="修改密码"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ModifyPhoneActivity"
+            android:label="绑定手机"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".WeChatPayActivity"
+            android:label="微信支付"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
